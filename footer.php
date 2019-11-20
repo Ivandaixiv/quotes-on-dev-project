@@ -13,7 +13,7 @@
 			</nav><!-- #site-navigation -->
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
-					<p class="footer-text">Brought to you by <a href="https://github.com/Ivandaixiv">Ivan D.</a></p>
+					<p class="footer-text">Brought to you by <a class="footer-link" href="https://github.com/Ivandaixiv">Ivan D.</a></p>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->

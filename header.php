@@ -4,7 +4,14 @@
  *
  * @package QOD_Starter_Theme
  */
-
+$page = "";
+if(is_page('about')){
+	$page = 'about';
+} elseif(is_page('archives')){
+	$page = 'archive';
+} elseif (is_archive()){
+	$page = 'archive-category';
+}
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<head>
@@ -27,4 +34,4 @@
 				</div><!-- .site-branding -->
 			</header><!-- #masthead -->
 
-			<div id="content" class="site-content">
+			<div id="content" class="site-content <?php echo $page?>">

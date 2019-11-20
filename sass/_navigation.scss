@@ -5,15 +5,16 @@
 /* Links */
 
 a {
-	color: $color__link;
+	color: $color__theme-green;
+	text-decoration: none;
 
 	&:visited {
-		color: $color__link-visited;
+		color: $color__theme-green;
 	}
 	&:hover,
 	&:focus,
 	&:active {
-		color: $color__link-hover;
+		color: $color__theme-green-hover;
 	}
 	&:focus {
 		outline: thin dotted;
@@ -21,6 +22,7 @@ a {
 	&:hover,
 	&:active {
 		outline: 0;
+		color: $color__theme-green-hover;
 	}
 }
 
@@ -76,10 +78,10 @@ a {
 		position: relative;
 	}
 	a{
-		display: block;
-		color: $color__theme-green;
+		display: block; 
 		text-decoration: none;
-		padding: 10px;
+		padding: 0 10px;
+		margin: 10px 0;
 	}
 
 }

@@ -414,15 +414,17 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #00cc00;
+  text-decoration: none; }
   a:visited {
-    color: purple; }
+    color: #00cc00; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #009100; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
-    outline: 0; }
+    outline: 0;
+    color: #009100; }
 
 /* Menus */
 .main-logo {
@@ -462,9 +464,9 @@ a {
     position: relative; }
   .main-navigation a {
     display: block;
-    color: #00cc00;
     text-decoration: none;
-    padding: 10px; }
+    padding: 0 10px;
+    margin: 10px 0; }
 
 /* Small menu. */
 .menu-toggle,
@@ -603,8 +605,59 @@ object {
 .site-content p {
   font-size: 1.25rem; }
 
-.site-content .footer-text a {
-  color: #00cc00; }
+.site-content .entry-meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .site-content .entry-meta h2 {
+    font-size: 1.25rem; }
+
+.site-content .source {
+  margin-top: 1em;
+  font-size: 1.2rem; }
+  .site-content .source a {
+    font-style: italic;
+    font-size: 1.25rem; }
+
+.site-content button {
+  color: #00cc00;
+  font-size: 1rem;
+  font-weight: 400;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  background: #222222;
+  border: 2px solid #00cc00;
+  padding: 15px 50px;
+  margin-bottom: 50px; }
+  .site-content button:hover {
+    color: #009100;
+    border: 2px solid #009100; }
+
+.about p {
+  font-size: 1rem; }
+
+.archive ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .archive ul li {
+    list-style: none;
+    padding: 10px; }
+
+.main-navigation a {
+  border-right: 1px solid #ffffff;
+  line-height: 15px; }
+
+.main-navigation li:nth-child(1) a {
+  padding-left: 0; }
+
+.main-navigation li:last-child a {
+  border: none; }
 
 /* All Archives Page */
 /* Submit a Quote Page */
