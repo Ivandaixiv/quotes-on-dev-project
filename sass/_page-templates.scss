@@ -68,8 +68,11 @@
         flex-direction: column;
         input{
             width: 40%;
+            max-width: 300px;
         }
         textarea {
+            width: 80%;
+            max-width: 1000px;
             height: 150px;
         }
     }
@@ -93,6 +96,29 @@
             box-shadow: none;
             color: $color__theme-green-hover;
             border: 2px solid $color__theme-green-hover;
+        }
+    }
+}
+// 404 page 
+.error-page {
+    fieldset {
+        border: none;
+        padding: 0;
+        margin: 0;
+        input {
+            background: none;
+            color: rgb(168, 168, 168);
+            border: 2px solid $color__theme-green;
+            padding: 5px;
+
+            &:focus {
+                color: $color__text-main;
+                border: 2px solid $color__text-main;
+            }
+        }
+        .searchicon-submit {
+            border: none;
+            padding: 10px;
         }
     }
 }

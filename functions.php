@@ -70,6 +70,12 @@ function qod_scripts() {
 	) );
 }
 add_action( 'wp_enqueue_scripts', 'qod_scripts' );
+// Font awesome
+
+function inhabitent_fontawesome(){
+	wp_enqueue_style( 'inhabitent-fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css');
+}
+add_action('wp_enqueue_scripts', 'inhabitent_fontawesome');
 
 /**
  * Custom functions that act independently of the theme templates.

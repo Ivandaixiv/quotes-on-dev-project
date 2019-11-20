@@ -660,8 +660,11 @@ object {
       -ms-flex-direction: column;
           flex-direction: column; }
   .submit div input {
-    width: 40%; }
+    width: 40%;
+    max-width: 300px; }
   .submit div textarea {
+    width: 80%;
+    max-width: 1000px;
     height: 150px; }
 
 .submit input, .submit textarea {
@@ -685,6 +688,22 @@ object {
             box-shadow: none;
     color: #009100;
     border: 2px solid #009100; }
+
+.error-page fieldset {
+  border: none;
+  padding: 0;
+  margin: 0; }
+  .error-page fieldset input {
+    background: none;
+    color: #a8a8a8;
+    border: 2px solid #00cc00;
+    padding: 5px; }
+    .error-page fieldset input:focus {
+      color: #ffffff;
+      border: 2px solid #ffffff; }
+  .error-page fieldset .searchicon-submit {
+    border: none;
+    padding: 10px; }
 
 .main-navigation a {
   border-right: 1px solid #ffffff;

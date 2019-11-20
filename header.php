@@ -13,8 +13,8 @@ if(is_page('about')){
 	$page = 'archive-category';
 } elseif(is_page('submit')) {
 	$page = 'submit';
-} elseif(is_404()){
-	$page = 'error-page';
+} elseif(is_404() || is_search()){
+	$page = 'error-page search';
 }
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
