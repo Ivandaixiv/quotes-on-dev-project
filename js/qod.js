@@ -1,5 +1,4 @@
 (function($){
-    $('body').append('Hello World');
     // 1. get request to grab random post and append to the DOM
 
     // add a click event for the get a new post on the "show me another" button and run the ajax below
@@ -12,4 +11,5 @@
         console.log("An Error has occured!", error) 
     })
     // 2. posta new quote using the post method
+    // using a form to submit a quote so a .submit event
 })(jQuery)

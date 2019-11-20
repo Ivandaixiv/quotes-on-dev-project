@@ -9,14 +9,16 @@ select,
 textarea {
 	color: $color__text-main;
 	font-family: $font__main;
-	font-size: 1rem;
+	font-size: $base_font_size;
 	line-height: $font__line-height-body;
+	font-weight: 300;
 }
 
 /* Headings */
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	font-weight: 300;
 }
 
 /* Copy */

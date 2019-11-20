@@ -1,7 +1,17 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-
+/* Front Page*/
+.site-content {
+    p {
+        font-size: 1.25rem;
+    }
+    .footer-text {
+        a {
+            color: $color__theme-green;
+        }
+    }
+}
 /* All Archives Page */
 
 /* Submit a Quote Page */

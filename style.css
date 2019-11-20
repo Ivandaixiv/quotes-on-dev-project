@@ -45,7 +45,8 @@ html {
   -ms-text-size-adjust: 100%; }
 
 body {
-  margin: 0; }
+  margin: 55px 10px;
+  max-width: 1080px; }
 
 article,
 aside,
@@ -229,14 +230,16 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
-  font-family: sans-serif;
-  font-size: 1rem;
-  line-height: 1.5; }
+  color: #ffffff;
+  font-family: "Exo", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  font-weight: 300; }
 
 /* Copy */
 p {
@@ -292,7 +295,7 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: #fff;
+  background: #222222;
   /* Fallback for when there is no custom background color defined. */ }
 
 blockquote,
@@ -422,6 +425,9 @@ a {
     outline: 0; }
 
 /* Menus */
+.main-logo {
+  width: 300px; }
+
 .main-navigation {
   clear: both;
   display: block;
@@ -456,7 +462,9 @@ a {
     position: relative; }
   .main-navigation a {
     display: block;
-    text-decoration: none; }
+    color: #00cc00;
+    text-decoration: none;
+    padding: 10px; }
 
 /* Small menu. */
 .menu-toggle,
@@ -591,5 +599,12 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+/* Front Page*/
+.site-content p {
+  font-size: 1.25rem; }
+
+.site-content .footer-text a {
+  color: #00cc00; }
+
 /* All Archives Page */
 /* Submit a Quote Page */
