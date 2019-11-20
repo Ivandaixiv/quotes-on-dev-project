@@ -11,6 +11,10 @@ if(is_page('about')){
 	$page = 'archive';
 } elseif (is_archive()){
 	$page = 'archive-category';
+} elseif(is_page('submit')) {
+	$page = 'submit';
+} elseif(is_404()){
+	$page = 'error-page';
 }
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
