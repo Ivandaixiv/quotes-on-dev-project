@@ -53,16 +53,18 @@
 }
 // Archive Page
 .archive {
-    ul {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-wrap: wrap;
-
-        li {
-            list-style: none;
-            padding: 10px;
-        }   
+    .post-archives,.category-archives,.tag-archives{
+        ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+    
+            li {
+                list-style: none;
+                padding: 10px;
+            }   
+        }
     }
 }
 /* Submit a Quote Page */

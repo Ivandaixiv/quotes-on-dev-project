@@ -623,7 +623,7 @@ object {
 .about p {
   font-size: 1rem; }
 
-.archive ul {
+.archive .post-archives ul, .archive .category-archives ul, .archive .tag-archives ul {
   margin: 0;
   padding: 0;
   display: -webkit-box;
@@ -631,7 +631,7 @@ object {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  .archive ul li {
+  .archive .post-archives ul li, .archive .category-archives ul li, .archive .tag-archives ul li {
     list-style: none;
     padding: 10px; }
 
@@ -708,7 +708,7 @@ object {
   .main-logo {
     width: 500px; }
   .main-navigation {
-    width: 300px; }
+    width: 285px; }
     .main-navigation li:last-child a {
       border-right: 1px solid #ffffff; }
   .footer-wrapper {
@@ -733,22 +733,27 @@ object {
         font-size: 2rem; }
       body .site-content button {
         margin: 25px 25%; }
-    body header {
+    body .site-header {
       text-align: center;
       margin-top: 50px; }
-      body header .main-logo {
+      body .site-header .main-logo {
         width: 700px; }
     body .footer-wrapper {
       margin: 0 50%; }
-  .about article header {
-    text-align: left; }
   .about article p {
     font-size: 1rem; }
-  .submit header {
-    text-align: left; }
   .submit div input {
     width: 60%; }
   .submit div .themed-button {
     width: 35%; }
   .submit div textarea {
-    width: 100%; } }
+    width: 100%; }
+  .submit .error-submit {
+    font-size: 1.25rem; }
+  .error-page .page-content p {
+    font-size: 1.25em; }
+  .error-page .page-content .searchicon-submit {
+    margin: 0; }
+  .search .search-title {
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #ffffff; } }

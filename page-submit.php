@@ -44,9 +44,9 @@ get_header(); ?>
 
             <?php else : ?>
 
-               <p>Sorry, you must be logged in to submit a quote!</p>
+               <p class="error-submit">Sorry, you must be logged in to submit a quote!</p>
 
-               <p><?php echo sprintf( '<a href="%1s">%2s</a>', esc_url( wp_login_url() ), 'Click here to login.' ); ?></p>
+               <p class="error-submit"><?php echo sprintf( '<a href="%1s">%2s</a>', esc_url( wp_login_url() ), 'Click here to login.' ); ?></p>
 
             <?php endif; ?>
          </section>
