@@ -579,15 +579,6 @@ iframe,
 object {
   max-width: 100%; }
 
-@media screen and (min-width: 620px) {
-  .main-logo {
-    width: 500px; }
-  .main-navigation {
-    width: 275px; }
-  .footer-wrapper .footer-text {
-    width: 550px;
-    padding: 5px 0 0 0; } }
-
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
@@ -712,3 +703,52 @@ object {
 
 .main-navigation li:last-child a {
   border: none; }
+
+@media screen and (min-width: 620px) {
+  .main-logo {
+    width: 500px; }
+  .main-navigation {
+    width: 300px; }
+    .main-navigation li:last-child a {
+      border-right: 1px solid #ffffff; }
+  .footer-wrapper {
+    width: 500px; }
+    .footer-wrapper .footer-text {
+      width: 550px;
+      padding: 5px 0 0 0; } }
+
+@media screen and (min-width: 1080px) {
+  body {
+    margin: 0 auto; }
+    body .quote-left, body .quote-right {
+      margin: 0 auto;
+      display: inline-block;
+      color: #00cc00; }
+      body .quote-left i, body .quote-right i {
+        font-size: 3em; }
+    body .site-content {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr; }
+      body .site-content p {
+        font-size: 2rem; }
+      body .site-content button {
+        margin: 25px 25%; }
+    body header {
+      text-align: center;
+      margin-top: 50px; }
+      body header .main-logo {
+        width: 700px; }
+    body .footer-wrapper {
+      margin: 0 50%; }
+  .about article header {
+    text-align: left; }
+  .about article p {
+    font-size: 1rem; }
+  .submit header {
+    text-align: left; }
+  .submit div input {
+    width: 60%; }
+  .submit div .themed-button {
+    width: 35%; }
+  .submit div textarea {
+    width: 100%; } }

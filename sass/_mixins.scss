@@ -13,13 +13,78 @@
 		width: 500px;
 	}
 	.main-navigation {
-		width: 275px;
+		width: 300px;
+
+		li:last-child a{
+			border-right: 1px solid $color__text-main;
+		}
 	}
 	.footer-wrapper {
-		
+		width: 500px;
 		.footer-text {
 			width: 550px;
 			padding: 5px 0 0 0;
+		}
+	}
+}
+@include desktop {
+	body {
+		margin: 0 auto;
+
+		.quote-left, .quote-right {
+			margin: 0 auto;
+			display: inline-block;
+			color: $color__theme-green;
+			i {
+				font-size: 3em;
+			}
+		}
+		.site-content  {
+			display: grid;
+			grid-template-columns: 1fr 2fr 1fr;
+			p {
+				font-size: 2rem;
+			}
+			button {
+				margin: 25px 25%;
+			}
+		}
+		header {
+			text-align: center;
+			margin-top: 50px;
+	
+			.main-logo {
+				width: 700px;
+			}
+		}
+		.footer-wrapper {
+			margin: 0 50%;
+		}
+	}	
+	.about {
+		article {
+			header {
+				text-align: left;
+			}
+			p {
+				font-size: 1rem;
+			}
+		}
+	}
+	.submit {
+		header {
+			text-align: left;
+		}
+		div {
+			input {
+				width: 60%;
+			}
+			.themed-button {
+				width: 35%;
+			}
+			textarea {
+				width: 100%;
+			}
 		}
 	}
 }
