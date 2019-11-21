@@ -2,6 +2,10 @@
 # Page Templates
 --------------------------------------------------------------*/
 /* Front Page*/
+.quote-left, .quote-right {
+    display: none;
+}
+
 .site-content {
     p {
         font-size: 1.25rem;
@@ -61,7 +65,7 @@
         }   
     }
 }
-// Submission page
+/* Submit a Quote Page */
 .submit {
     div {
         display: flex;
@@ -122,6 +126,13 @@
         }
     }
 }
+
+/* All Archives Page */
+.archive-category {
+    header, article{
+        border-bottom: 1px dotted $color__text-main;    
+    }
+}
 // Default styling for navigation
 .main-navigation {
     a {
@@ -135,6 +146,4 @@
         border: none;
     } 
 }
-/* All Archives Page */
 
-/* Submit a Quote Page */

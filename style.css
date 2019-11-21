@@ -529,25 +529,6 @@ a {
     /* Above WP toolbar. */ }
 
 /*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
-.alignleft {
-  display: inline;
-  float: left;
-  margin-right: 1.5rem; }
-
-.alignright {
-  display: inline;
-  float: right;
-  margin-left: 1.5rem; }
-
-.aligncenter {
-  clear: both;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-/*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
 .clearfix {
@@ -598,10 +579,22 @@ iframe,
 object {
   max-width: 100%; }
 
+@media screen and (min-width: 620px) {
+  .main-logo {
+    width: 500px; }
+  .main-navigation {
+    width: 275px; }
+  .footer-wrapper .footer-text {
+    width: 550px;
+    padding: 5px 0 0 0; } }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
 /* Front Page*/
+.quote-left, .quote-right {
+  display: none; }
+
 .site-content p {
   font-size: 1.25rem; }
 
@@ -651,6 +644,7 @@ object {
     list-style: none;
     padding: 10px; }
 
+/* Submit a Quote Page */
 .submit div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -705,6 +699,10 @@ object {
     border: none;
     padding: 10px; }
 
+/* All Archives Page */
+.archive-category header, .archive-category article {
+  border-bottom: 1px dotted #ffffff; }
+
 .main-navigation a {
   border-right: 1px solid #ffffff;
   line-height: 15px; }
@@ -714,6 +712,3 @@ object {
 
 .main-navigation li:last-child a {
   border: none; }
-
-/* All Archives Page */
-/* Submit a Quote Page */

@@ -39,3 +39,4 @@ if(is_page('about')){
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content <?php echo $page?>">
+				<p class="quote-left"><i class="fas fa-quote-left"></i></p>
