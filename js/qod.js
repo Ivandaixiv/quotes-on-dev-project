@@ -18,7 +18,7 @@
                 history.pushState(null,null, qod_vars.home_url + '/' + post.slug);
                 // 1st value is object to manage state 2nd value is url title for browser tab
                 $('.entry-content p').html(post.content.rendered);
-                $('.entry-title').html(post.title.rendered);
+                $('.entry-title').html("&mdash; " + post.title.rendered);
                 if(post._qod_quote_source_url == ''){
                     if(post._qod_quote_source != '') {
                         $('.source').html(' ,' + post._qod_quote_source);
