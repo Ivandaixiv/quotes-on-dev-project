@@ -60,11 +60,13 @@ function qod_scripts() {
 	wp_enqueue_style( 'qod-google-fonts-exo', 'https://fonts.googleapis.com/css?family=Exo:300,300i,400&display=swap');
 	wp_enqueue_script( 'qod-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'qod-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
-	wp_enqueue_script( 'qod-script', get_template_directory_uri() . '/build/js/qod.min.js', array('jquery'), '', true );
+	wp_enqueue_script( 'qod_script', get_template_directory_uri() . '/build/js/qod.min.js', array('jquery'), '', true );
 
 	// Localized script
-	wp_localize_script( 'qod_script', 'api_vars', array(
+	wp_localize_script( 'qod_script', 'qod_vars', array(
 		'nonce' => wp_create_nonce( 'wp_rest' ),
+		'rest_url' => rest_url(),
+		'home_url' => home_url(),
 		'success' => 'Thanks, your submission was received!',
 		'failure' => 'Your submission could not be processed.',
 	) );
