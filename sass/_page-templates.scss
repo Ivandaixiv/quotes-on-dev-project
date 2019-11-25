@@ -86,6 +86,10 @@
         border: 1px solid $color__theme-green;
         background: none;
         margin: 10px 0;
+        
+        &:focus {
+            color: $color__text-main;
+        }
     }
     .themed-button {
         color: $color__theme-green;

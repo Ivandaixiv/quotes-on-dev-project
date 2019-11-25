@@ -36,10 +36,10 @@ get_header(); ?>
                         <input type="url" name="quote_source_url" id="quote-source-url">
                      </div>
 
-                     <input type="submit" value="Submit Quote" class="themed-button">
+                     <input type="submit" value="Submit Quote" class="themed-button" id="quote-submit-button">
                   </form>
 
-                  <p class="submit-success-message" style="display:none;"></p>
+                  <p id="submit-success-message" class="submit-success-message"></p>
                </div>
 
             <?php else : ?>

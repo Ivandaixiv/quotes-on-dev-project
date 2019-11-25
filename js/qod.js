@@ -38,6 +38,27 @@
             });
         });
         // 2. posta new quote using the post method
+        $('#quote-submission-form').on('submit',function(event){
+            event.preventDefault();
+            $.ajax({
+                method: "POST",
+                url: qod_vars.rest_url + '/wp/v2/posts/',
+                data: {
+                    title: $('#quote-author').val(),
+                    content: $('#quote-content').val(),
+                    _qod_quote_source: $('#quote-source').val(),
+                    _qod_quote_source_url: $('#quote-source-url').val(),
+                    
+                },
+                beforeSend: function(submission){
+                    submission.setRequestHeader( 'X-WP-Nonce', qod_vars.nonce );
+                },
+            }).done(function(){
+                $("#submit-success-message").text("Thank you for your submission!");
+            }).fail(function(){
+                $("#submit-success-message").text("Sorry something went wrong.");
+            })
+        });
         // using a form to submit a quote so a .submit event
     });
 })(jQuery)

@@ -656,6 +656,8 @@ object {
   border: 1px solid #00cc00;
   background: none;
   margin: 10px 0; }
+  .submit input:focus, .submit textarea:focus {
+    color: #ffffff; }
 
 .submit .themed-button {
   color: #00cc00;
