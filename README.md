@@ -1,23 +1,21 @@
 # Quotes on Dev Starter
 
-A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+Ajax and Wordpress API
 
-## Installation
+## Key Learning
+HTML, CSS, Javascript, Ajax, Gulp, Sass, Wordpress API, Minify, Json, etc...
 
-### 1. Download me (don't clone me!)
+## Technologies Used
+Wordpress Rest API, JQuery, Ajax
 
-Then add me to your `wp-content/themes` directory.
+## Personal Experience
+Deepen the understanding on wordpress and their rest api. Also gained more insight on how wordpress functions as a content managment system.
 
-### 2. Rename the `quotesondev-starter-master` directory
+## Website Description
 
-Make sure that the theme directory name is project appropriate! Do you need `starter` or `master` in the directory name?
+This WordPress Site that uses Ajax and Wordpress API to display random quotes from the database and enables the user to submit their own quotes
 
-### 3. Install the dev dependencies
-
-Next you'll need to run `npm install` **inside your theme directory** to install the npm packages you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
-
-And now would be a good time to `git init` :)
+## Credit
+    1. https://jquery.com/
+    2. https://developer.wordpress.org/rest-api/
+    3. https://underscores.me/
